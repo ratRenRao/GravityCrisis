@@ -11,7 +11,7 @@ namespace DebreeManagement
 
         void Start()
         {
-            this = Instantiate()
+            //this = Instantiate()
             GetComponent<Rigidbody>().position = new Vector3(Random.Range(60.0f, 300.0f), 5.0f, Random.Range(0.0f, 300.0f));
             Vector2 coords2d = GenerateCoords(Random.Range(0.0f, 360.0f));
         }
