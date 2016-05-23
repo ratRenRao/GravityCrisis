@@ -381,12 +381,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35778a58633f03747b29dc4b401cdb49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 5
   Satelite: {fileID: 100000, guid: 50010e7bbd970ca46be9f44cc18143e0, type: 2}
   activeDebree: []
   speedRatio: 0.25
   spawnArea: {fileID: 0}
-  spawnVector: {x: 800, y: 5, z: 800}
+  spawnVector: {x: 65, y: 5, z: 65}
   spawnQuaternation: {x: 0, y: 0, z: 0, w: 0}
   waitTime: 4
 --- !u!4 &1585521249

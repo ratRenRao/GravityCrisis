@@ -4,6 +4,7 @@ using System.Collections;
 using System.Threading;
 using System.Collections.Generic;
 using System.Linq;
+using Assets.Scripts;
 using Random = System.Random;
 
 namespace DebreeManagement
@@ -40,6 +41,9 @@ namespace DebreeManagement
         void Start()
         {
             lastSpawn = DateTime.Now.AddSeconds(-waitTime);
+
+            //Move to a more appropriate location
+            new Tests().Run();
         } 
 
         void Update()
