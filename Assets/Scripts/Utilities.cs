@@ -7,7 +7,13 @@ namespace Assets.Scripts
 {
     static class Utilities
     {
-        public static float GenerateRandomGaussianNumber()
+        /// <summary>
+        /// Generates a number from on a normal distribution/Gaussian curve.
+        /// </summary>
+        /// <param name="mean">The number statistically most likely to be returned, with a deviation of 0</param>
+        /// <param name="deviation">How quickly the statistical frequency of numbers diminish as they move away from the mean</param>
+        /// <returns></returns>
+        public static float GenerateRandomGaussianNumber(float mean, float deviation)
         {
             /*
             double v1, v2;
@@ -35,7 +41,7 @@ namespace Assets.Scripts
 
             s = Mathf.Sqrt((-2.0f * Mathf.Log(s)) / s);
 
-            var result = v1*s;
+            var result = (v1*s) * deviation + mean;
             return result;
         }
     }

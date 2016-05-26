@@ -22,13 +22,13 @@ namespace Assets.Scripts
 
             for (int i = 0; i < itterations; i++)
             {
-                var nextFloat = Utilities.GenerateRandomGaussianNumber();
+                var nextFloat = Utilities.GenerateRandomGaussianNumber(5, 1);
                 sum += nextFloat;
             }
 
             var mean = sum/itterations;
 
-            Assert.IsTrue(Math.Abs(mean) < .02);
+            Assert.IsTrue(Math.Abs(mean) < 5.02);
         }
     }
 }
