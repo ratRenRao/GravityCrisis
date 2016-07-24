@@ -35,11 +35,7 @@ public class MouseBehaviors : MonoBehaviour
         Debug.Log("Mouse clicked");
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Background.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity))
-        {
-            transform.position = hit.point;
-        }
-
-        Debug.Log("(" + hit.point.x + ", " + hit.point.y + ")");
+        Background.GetComponent<Collider>().Raycast(ray, out hit, Mathf.Infinity);
+        Debug.Log("(" + hit.point.x + ", " + hit.point.z + ")");
     }
 }
