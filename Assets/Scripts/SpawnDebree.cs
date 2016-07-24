@@ -88,7 +88,7 @@ namespace DebreeManagement
                 x = rand.Next(-SpawnRadius, SpawnRadius);
             }
 
-            Debug.Log("x = " + x + ", y = " + y + ", z = " + z);
+            //Debug.Log("x = " + x + ", y = " + y + ", z = " + z);
             return new Vector3(x, y, z);
         } 
 
